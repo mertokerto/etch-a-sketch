@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Etch-a-sketch</title>
+          <link rel="stylesheet" href="style.css" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+     </head>
+     <body>
+          <h1 class="title">Etch-a-sketch</h1>
+          <div class="big-container">
+               <div class="options">
+                    <div class="size-container">
+                         <input class="input" type="text" placeholder="Size of board" value="16" onchange="changeSize(this.value)" />
+                         <button class="button">Set Size</button>
+                    </div>
+                    <div class="buttons">
+                         <button class="button" onclick="changeColor('random')">Random</button>
+                         <button class="button" onclick="changeColor('black')">Black</button>
+                         <button class="button" onclick="changeColor('gray')">Gray</button>
+                         <button class="button" onclick="resetBoard()">Reset</button>
+                    </div>
+               </div>
+
+               <div class="content">
+                    <div class="board"></div>
+               </div>
+          </div>
+          <footer>
+               <div class="footer">
+                    <p>Copyright &copy;mertokerto</p><a href="https://github.com/mertokerto" target="_blank"><i class="fa fa-github"></i></a>
+               </div>
+          </footer>
+          <script src="script.js"></script>
+     </body>
+</html>
